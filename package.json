@@ -1,0 +1,25 @@
+{
+  "name": "fixture-app",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Test bench for claude-toolkit v2: a small TypeScript/React app the toolkit's CI installs plugins onto.",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "7.0.2",
+    "vitest": "5.0.5"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  }
+}
